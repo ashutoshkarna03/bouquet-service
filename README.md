@@ -1,4 +1,3 @@
-```markdown
 # Bouquet Service
 
 This project is a command-line application that simulates a simplified bouquet production process for a flower business. It reads bouquet design specifications and a stream of incoming flowers, and outputs bouquets as soon as enough flowers are available to fulfill any design.
@@ -51,6 +50,7 @@ This project is a command-line application that simulates a simplified bouquet p
 ## Example
 
 **Input:**
+
 ```
 AS2a2b3
 BL2a2
