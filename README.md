@@ -74,6 +74,31 @@ AS2a1b
 
 ---
 
+## Approach to the solution
+
+1. **Parse Designs:**
+Read all bouquet design lines from input until the empty line, extracting the design name, flower size, required species, their max quantities, and the total bouquet size.
+
+2. **Track Incoming Flowers:**
+For each flower line after the empty line, update an inventory (organized by size and species) to count available flowers.
+
+3. **Check for Bouquet Creation:**
+After each flower arrival, check every design to see if enough flowers are available (correct size, required species, at least 1 and at most the max per species, sum equals design total).
+
+4. **Produce Bouquets:**
+When a design can be fulfilled, select the combination of flowers (using a greedy or systematic approach), output the bouquet in the required format, and remove those flowers from inventory.
+
+5. **Repeat Until Input Ends:**
+Continue processing incoming flowers and producing bouquets as soon as possible until all input is consumed.
+
+6. **Standard Input/Output:**
+The program reads from standard input and writes to standard output, as required by the challenge.
+
+7. **Dockerization:**
+The solution includes a Dockerfile so it can be built and run in a containerized environment as specified in the requirements.
+
+---
+
 ## Project Structure
 
 ```
@@ -137,6 +162,3 @@ pytest test_bouquet.py
 - `README.md` — Project documentation and instructions.
 
 ---
-
-
-```
